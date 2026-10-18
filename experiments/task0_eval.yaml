@@ -1,0 +1,22 @@
+policy:
+  path: lerobot/smolvla_libero
+
+env:
+  type: libero
+  task: libero_spatial
+  task_ids: [0, 1, 2, 3, 4]
+  control_mode: relative
+  init_states: true
+  hard_reset: true
+  episode_length: 280
+
+eval:
+  batch_size: 1
+  n_episodes: 10
+
+seed: 42
+output_dir: outputs/eval/spatial_task_01234
+
+rename_map:
+  observation.images.image: observation.images.camera1
+  observation.images.image2: observation.images.camera2
