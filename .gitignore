@@ -164,7 +164,7 @@ wandb/
 
 # Data folders
 data/
-outputs/
+# outputs/
 
 # Translations
 *.mo
@@ -176,3 +176,5 @@ outputs/
 *.urdf
 *.xml
 *.part
+
+*.mp4
